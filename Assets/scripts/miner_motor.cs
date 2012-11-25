@@ -15,7 +15,7 @@ public class miner_motor : MonoBehaviour
 		Instance = this;
 	}
 	
-	void UpdateMotor () 
+	public void UpdateMotor () 
 	{
 		RotateCharacter ();
 		ProcessMotion ();
@@ -29,9 +29,7 @@ public class miner_motor : MonoBehaviour
 		
 		//Normalize Move Vector if Magnitude > 1
 		if (MoveVector.magnitude > 1) 
-		{
 			MoveVector = Vector3.Normalize(MoveVector);
-		}
 		
 		//Multiply MoveVector by Speed
 		MoveVector *= MoveSpeed;
@@ -48,12 +46,12 @@ public class miner_motor : MonoBehaviour
 	//This will can the direction in which the character is facing
 	void RotateCharacter () 
 	{
-		if (MoveVector.x < 0) {
-        	transform.eulerAngles = Vector3(0,180,0);
- 		}
+		//if (MoveVector.x < 0) {
+       // 	transform.forward = new Vector3(1f, 0f, 0f);
+ 		//}
 		
-		if (MoveVector.x  >= 0) {
-        	transform.eulerAngles = Vector3(0,0,0);
- 		}
+		//if (MoveVector.x  >= 0) {
+        //	transform.forward = new Vector3(-1f, 0f, 0f);
+ 		//}
 	}
 }

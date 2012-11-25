@@ -2,8 +2,8 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\miner_motor.cs">
     <Files>
-      <File FileName="Assets\scripts\miner_motor.cs" Line="37" Column="27" />
-      <File FileName="Assets\scripts\miner_controller.cs" Line="32" Column="2" />
+      <File FileName="Assets\scripts\miner_motor.cs" Line="35" Column="27" />
+      <File FileName="Assets\scripts\miner_controller.cs" Line="40" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
