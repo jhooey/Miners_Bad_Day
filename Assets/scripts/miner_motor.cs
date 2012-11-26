@@ -27,6 +27,8 @@ public class miner_motor : MonoBehaviour
 		//Transform MoveVector to World Space
 		MoveVector = transform.TransformDirection(MoveVector);
 		
+		
+		
 		//Normalize Move Vector if Magnitude > 1
 		if (MoveVector.magnitude > 1) 
 			MoveVector = Vector3.Normalize(MoveVector);
@@ -38,6 +40,8 @@ public class miner_motor : MonoBehaviour
 		//Multiply Move Vector by DeltaTime
 		MoveVector *= Time.deltaTime;
 		
+	
+		
 		//Move the Character in the World
 		miner_controller.CharacterController.Move(MoveVector);
 		
@@ -46,12 +50,6 @@ public class miner_motor : MonoBehaviour
 	//This will can the direction in which the character is facing
 	void RotateCharacter () 
 	{
-		//if (MoveVector.x < 0) {
-       // 	transform.forward = new Vector3(1f, 0f, 0f);
- 		//}
-		
-		//if (MoveVector.x  >= 0) {
-        //	transform.forward = new Vector3(-1f, 0f, 0f);
- 		//}
+
 	}
 }
